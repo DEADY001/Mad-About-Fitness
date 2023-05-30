@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navbar-container">
+            <a class='logo' href="./index.html"> Mad About Fitness</a>
+            <div class="logo-image">
+                <img src="../images/gallery/mad.jpg" class="img-fluid">
+
+          </div>
+            <nav>
+                
+                <ul class="menu-items">
+                    <li class='nav-item'><a class="active nav-link" href="#home-section">home</a></li>
+                    <li class='nav-item'><a class="nav-link" href="#about-section">about us</a></li>
+                    <li class='nav-item'><a class="nav-link" href="#classes-section">classes</a></li>
+                    <li class='nav-item'><a class="nav-link" href="#schedule-section">schedules</a></li>
+                    <li class='nav-item'><a class="nav-link" href="#contact-section">contact</a></li>
+                </ul>  
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>    
+    </header>
+    <main>
+        <section id="home-section" class="welcome" title="Welcome section">
+            <div class="summary">
+                <h1 class="slide-left">UPGRADE YOUR BODY AT MAD ABOUT FITNESS</h1>
+                <p class="slide-left">Best way to build a healthy lifestyle</p>
+            </div>
+            <div class="learn-more slide-left">
+                <a href="" class="slide-left">GET STARTED</a>
+                <input class="btn slide-left" type="button" value="LEARN MORE"> 
+            </div>   
+        </section>
+
+        <section  class="training schedule">
+            <div>
+                <h2>New to the MAD</h2>
+                <p>Membership is up to 3 Month :- 2400(Rs.800 per month)</p>
+                <a class="register-btn" href="../users/register.html">BECOME A MEMBER TODAY</a>
+            </div>
+            <div>
+                <h2>Working hours</h2>
+                <p>Sunday: Closed</p>
+                <p>Monday-Saturday</p>
+                <time datetime="2022-09-06T07:30:00">5:00 am to 10:00 pm</time>
+         
+               
+            </div>
+        </section>
+
+        <section id="classes-section" class="training classes section">
+             <h3>Weight Lifting</h3>
+            <div class="class-sec">
+                <img src="../images/gallery/lift1.webp" alt="">
+                <img src="../images/gallery/lift2.webp" alt="">
+                <img src="../images/gallery/lift3.jpg" alt="">
+            </div>
+            <h3>Cardio</h3>
+            <div class="class-sec">
+                <img src="../images/gallery/cardio1.jpg" alt="">
+                <img src="../images/gallery/cardio2.webp" alt="">
+                <img src="../images/gallery/cardio3.webp" alt="">
+            </div>
+        </section>
+    
+        <section id="schedule-section" class="workout timetable" title="check the workout timetable">
+            <table>
+                <caption>Workout Timetable</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">DAYS</th>
+                        <th scope="col">7:00AM</th>
+                        <th scope="col">9:00AM</th>
+                        <th scope="col">11:00AM</th>
+                        <th scope="col">7:00PM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">MON</th>
+                        <td><b>Cardio</b><br></td>
+                        <td></td>
+                        <td></td>
+                        <td><b>Push Movement</b><br><span>chest,shoulder,triceps</span></td>
+        
+                    </tr>
+                    <tr>
+                        <th scope="row">TUE</th>
+                        <td><b>Pull Movement</b><br><span>back, bicpes</span></td>
+                        <td></td>
+                        <td><b>Cardio</b><br></td>
+                       
+                    </tr>
+                    <tr>
+                        <th scope="row">WED</th>
+                        <td></td>
+                        <td><b>Legs</b><br></td>
+                        <td><b>ABS</b><br></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">THU</th>
+                        <td></td>
+                        <td><b>Cardio</b><br></td>
+                        <td></td>
+                        <td><b>Push Movement</b><br><span>chest,shoulder,triceps</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FRI</th>
+                        <td><b>Yoga Section</b><br></td>
+                        <td></td>
+                        <td><b>Rest</b><br></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">SAT</th>
+                        <td></td>
+                        <td><b>Cardio</b><br></td>
+                        <td><b></b></td>
+                        <td><b>Pull Movement</b><br><span>back, bicpes</span></td>
+                    </tr>
+                </tbody> 
+            </table>
+        </section>
+
+        <section class='contact form section' id='contact-section'>
+            <h3>Feel free to ask anything</h3>
+            <form  method="POST" class="form-container">
+                <input type="text" name="username" placeholder="Name" required="required">
+                <input type="email" name="useremail" placeholder="example@gmail.com"
+                    required="required" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$">
+                <textarea name="message box" rows="7" cols="40"
+                    placeholder="Message here" maxlength="500"></textarea>
+                <input class="btn submit message" type="submit" value="Submit" title="user message submit button">
+            </form>
+        </section>
+
+        <section class="map section" title="google map section">
+            <h3>Where you can find us</h3>
+            <p><i class="fa-solid fa-location-dot"></i>our location</p>
+            <map name="map" title="check us on google map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14028.080005716034!2d77.50056359107818!3d28.478944285006357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceb676ba33e23%3A0xdf1eea6e94992cee!2sMAD%20ABOUT%20FITNESS!5e0!3m2!1sen!2sin!4v1677143684221!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </map>    
+        </section>
+    </main>  
+    <footer id="about-section">
+        <section>
+            <address title="company address">
+                <h4>GYM Address</h4>
+                <p><i class="fa-solid fa-location-dot"></i> FFJX+9MC, Jagat Farm, Block E,  Gamma 1, <span>Greater Noida, Uttar Pradesh </span></p>
+                <p><i class="fa-solid fa-phone"></i> +918949305294</p>
+                <a href="mailto:ridwanullahiajayi01@gmail.com"><i class="fa-solid fa-envelope"></i> support@gmail.com</a>
+            </address>
+
+            <div class="pages-navigation links">
+                <h4>Page Links</h4>
+                <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Testimony</a></li>
+                </ul>
+            </div>
+        </section>
+       
+        <section class="social media handles" title="social medial handles">
+            <h4>Follow us</h4>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </section> 
+    </footer>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
